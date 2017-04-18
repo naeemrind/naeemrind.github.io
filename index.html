@@ -191,7 +191,6 @@
             color: #fbac13;
         }
         .myIntro {
-            padding: 70px;
             display: block;
             width: 100%;
             height: auto;
@@ -202,7 +201,8 @@
             padding: 30px 0;
             color: #3597ca;
         }
-         .myIntro p {
+        .myIntro p {
+            padding: 70px;
             font-size: 22px;
             line-height: 32px;
             font-weight: lighter;
@@ -211,6 +211,37 @@
         }
         .myIntro span {
             display: block;
+        }
+        .myIntro strong {
+            color: orange;
+        }
+        .skills {
+            padding: 0 3% 0 5%;
+            display: block;
+            width: 100%;
+            margin-top: -30px;
+            padding-bottom: 50px;
+        }
+
+        .html, .css, .javascript, .jquery {
+            display: inline-block;
+            width: 24%;
+        }
+        .skills img {
+            display: block;
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .skills .html h2, .skills .javascript h2 {
+            text-align: center;
+            color: #3597ca;
+            padding: 15px;
+        }
+        .skills .css h2, .skills .jquery h2 {
+            text-align: center;
+            color: orange;
+            padding: 15px;
         }
         .workMsg {
             text-align: center;
@@ -643,7 +674,25 @@
         </div> <!-- ------------------ About Section End -------------------- -->
         <h1 class="myIntroHead" id="myIntro">About Me</h1>
         <div class="myIntro">
-            <p>My name is Muhammad Naeem a.k.a Naeem Rind. Born and raised in a beautiful mountainous city Quetta, Pakistan. Got my Bachelor's Degree in Electrical Engineering in 2013. I am passionate about programming, particularly Web Development and 3D Designing. In my free time, Nature Photography and Hiking are always my longlasting Friends. Currently I am polishing up on my Front-End Dev skills on Freecodecamp and many other learning resources.<span>My Current Skills are:</span></p>
+            <p>My name is Muhammad Naeem a.k.a Naeem Rind. Born and raised in a beautiful mountainous city Quetta, Pakistan. Got my Bachelor's Degree in Electrical Engineering in 2013. I am passionate about programming, particularly Web Development and 3D Designing. In my free time, Nature Photography and Hiking are always my longlasting Friends. Currently I am polishing up on my Front-End Dev skills on Freecodecamp and many other learning resources.<span>My Current <strong>Skills</strong> are:</span></p>
+            <div class="skills">
+                <div class="html">
+                    <img src="html5.png" alt="HTML" />
+                    <h2>HTML</h2>
+                </div>
+                <div class="css">
+                    <img src="css3.png" alt="HTML" />
+                    <h2>CSS</h2>
+                </div>
+                <div class="javascript">
+                    <img src="javascript.png" alt="HTML" />
+                    <h2>Javascript</h2>
+                </div>
+                <div class="jquery">
+                    <img src="jquery.png" alt="HTML" />
+                    <h2>JQuery</h2>
+                </div>
+            </div>
         </div> <!-- ------------------ My Intro Section End -------------------- -->
         <h1 class="workMsg" id="work">Some of My Works</h1>
         <div class="work">
