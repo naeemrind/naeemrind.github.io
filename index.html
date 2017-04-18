@@ -109,6 +109,7 @@
         }
 
         .intro-text {
+            display: block;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -189,7 +190,28 @@
         li:nth-child(2) {
             color: #fbac13;
         }
-
+        .myIntro {
+            padding: 70px;
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #1b2b31;
+        }
+        .myIntroHead {
+            text-align: center;
+            padding: 30px 0;
+            color: #3597ca;
+        }
+         .myIntro p {
+            font-size: 22px;
+            line-height: 32px;
+            font-weight: lighter;
+            text-align: center;
+            color: #c2c2c2;
+        }
+        .myIntro span {
+            display: block;
+        }
         .workMsg {
             text-align: center;
             padding: 30px 0;
@@ -609,6 +631,7 @@
                     <h2>I am a Front-End Developer + </h2>
                     <div class="scroller-border">
                         <ul id="scroller">
+                            <li>Electrical Engineer</li>
                             <li>Graphic Designer</li>
                             <li>3D Designer</li>
                             <li>Amateur Photographer</li>
@@ -618,6 +641,10 @@
                 </div>
             </div> <!-- ------------- Intro-text End ----------------------- -->
         </div> <!-- ------------------ About Section End -------------------- -->
+        <h1 class="myIntroHead" id="myIntro">About Me</h1>
+        <div class="myIntro">
+            <p>My name is Muhammad Naeem a.k.a Naeem Rind. Born and raised in a beautiful mountainous city Quetta, Pakistan. Got my Bachelor's Degree in Electrical Engineering in 2013. I am passionate about programming, particularly Web Development and 3D Designing. In my free time, Nature Photography and Hiking are always my longlasting Friends. Currently I am polishing up on my Front-End Dev skills on Freecodecamp and many other learning resources.<span>My Current Skills are:</span></p>
+        </div> <!-- ------------------ My Intro Section End -------------------- -->
         <h1 class="workMsg" id="work">Some of My Works</h1>
         <div class="work">
             <div class="work-row-one">
@@ -727,7 +754,7 @@
                     $(this).appendTo($('#scroller')).fadeIn();
                 });
             }
-            setInterval(scroller, 5000);
+            setInterval(scroller, 4000);
 
             /* ------------------- Input Area -------------------------------- */
             $('.nameEmail, textarea').focusin(function () {
@@ -842,8 +869,6 @@
                 alert(errorMessage);
                 return false;
             }
-
-
 
             var email = document.getElementById('input-email');
             var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
